@@ -8,9 +8,9 @@ rlm = read.csv("https://raw.githubusercontent.com/timbulwidodostp/rlm/main/rlm/r
 # Estimation Robust Fitting of Linear Models Use rlm (MASS) With (In) R Software
 rlm_1 <- rlm(Dependen ~ Independen_1 + Independen_2 + Independen_3, rlm)
 summary(rlm_1)
-rlm_2 <- rlm(stack.loss ~ Independen_1 + Independen_2 + Independen_3, rlm, psi = psi.hampel, init = "lts")
+rlm_2 <- rlm(Dependen ~ Independen_1 + Independen_2 + Independen_3, rlm, psi = psi.hampel, init = "lts")
 summary(rlm_2)
-rlm_3 <- rlm(stack.loss ~ Independen_1 + Independen_2 + Independen_3, rlm, psi = psi.bisquare)
+rlm_3 <- rlm(Dependen ~ Independen_1 + Independen_2 + Independen_3, rlm, psi = psi.bisquare)
 summary(rlm_3)
 # Robust Fitting of Linear Models Use rlm (MASS) With (In) R Software
 # Olah Data Semarang
